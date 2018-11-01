@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+    <section name="question register">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                        <form method="POST" action="/registrarpregunta">
+                        <div class="row">
+                                <div class="col-sm-3 col-md-2 col-5">
+                                    <label style="font-weight:bold;">Cargo</label>
+                                </div>
+                                <div class="col-md-8 col-6">
+                                    <!-- Default inline 1-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+        <label class="custom-control-label" for="defaultInline1">Contralor</label>
+      </div>
+      
+      <!-- Default inline 2-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+        <label class="custom-control-label" for="defaultInline2">Interventor</label>
+      </div>
+      
+      <!-- Default inline 3-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+        <label class="custom-control-label" for="defaultInline3">Liquidador</label>
+      </div>
+      <!-- Default inline 4-->
+      <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline4">Núcleo común</label>
+          </div>
+                                </div>
+                            </div>
+                            <hr />
+
+                </div>
+            </div>
+
+            <!--Tema y subtema-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Tema y subtema</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <div class="form-group">
+                                    <label for="topic">Tema:</label>
+                                    <input type="text" class="form-control" id="topic">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="subtopic">Subtema:</label>
+                                        <input type="text" class="form-control" id="subtopic">
+                                      </div>
+                        </div>
+                    </div>
+                    <hr />                
+
+            <!--Dificultad-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Dificultad</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="bajo" name="Dificulty">
+                                    <label class="custom-control-label" for="bajo">Bajo</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="medio" name="Dificulty">
+                                        <label class="custom-control-label" for="medio">Medio</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="alto" name="Dificulty">
+                                            <label class="custom-control-label" for="alto">Alto</label>
+                                          </div>
+                        </div>
+                    </div>
+                    <hr />
+                
+            <!--Proceso cognitivo-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Proceso cognitivo</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="recordar" name="CognitiveProcess">
+                                    <label class="custom-control-label" for="recordar">Recordar</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="entender" name="CognitiveProcess">
+                                        <label class="custom-control-label" for="entender">Entender</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="aplicar" name="CognitiveProcess">
+                                            <label class="custom-control-label" for="aplicar">Aplicar</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" class="custom-control-input" id="analizar" name="CognitiveProcess">
+                                                <label class="custom-control-label" for="analizar">Analizar</label>
+                                              </div>
+                        </div>
+                    </div>
+                    <hr />
+                
+            <!--Dominio de conocimiento-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Dominio de conocimiento</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="factual" name="Knowledge domain">
+                                    <label class="custom-control-label" for="factual">Factual</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="conceptual" name="Knowledge domain">
+                                        <label class="custom-control-label" for="conceptual">Conceptual</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="procedimental" name="Knowledge domain">
+                                            <label class="custom-control-label" for="procedimental">Procedimental</label>
+                                          </div>    
+                        </div>
+                    </div>
+                    <hr />
+
+            <!--Situación-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Situación</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                        <input type="text" class="form-control" id="situation">
+
+                        <div class="input-group">
+                                <label class="input-group-btn">
+                                    <span class="btn btn-primary">
+                                        Adjuntar archivos&hellip; <input type="file" style="display: none;" multiple>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                                <!--Enunciado-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Enunciado</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <input type="text" class="form-control" id="statement">
+
+                            <div class="input-group">
+                                    <label class="input-group-btn">
+                                        <span class="btn btn-primary">
+                                            Adjuntar archivos&hellip; <input type="file" style="display: none;" multiple>
+                                        </span>
+                                    </label>
+                                </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                                <!--Tipo de pregunta-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Tipo de pregunta</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="única" name="Question type">
+                                    <label class="custom-control-label" for="única">Única respuesta</label>
+                                  </div>
+                                  <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" class="custom-control-input" id="multiple" name="Question type">
+                                        <label class="custom-control-label" for="multiple">Múltiple respuesta</label>
+                                      </div>
+                        </div>
+                    </div>
+                    <hr />
+
+                                <!--Pertinencia y relevancia-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Pertinencia y relevancia</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <input type="text" class="form-control" id="relevance">
+                        </div>
+                    </div>
+                    <hr />
+
+                                <!--Observaciones y soportes-->
+            <div class="row">
+                    <div class="col-sm-3 col-md-2 col-5">
+                        <label style="font-weight:bold;">Observacionesy soportes</label>
+                    </div>
+                    <div class="col-md-8 col-6">
+                            <input type="text" class="form-control" id="observations">
+                        </div>
+                    </div>
+                    <hr />
+
+                                <!--Registrar respuestas-->
+            <div class="row">
+                    <div class="col-md-8 col-6">
+                            <button type="submit" class="btn btn-success">Registrar respuestas</button>
+                            
+                        </div>
+                    </div>
+                    <hr />
+                </form>
+
+               </div>
+            </div>
+        </div>
+          
+    </section>
+
+</body>
+
+</html>
