@@ -1,0 +1,26 @@
+<h1>Register</h1>
+<p>
+  <% if(typeof mensaje != 'undefined' && mensaje){ %>
+    <p class="msj-form">*
+        <% mensaje %>
+    </p>
+    <% } %>
+</p>
+<form method="POST" action="/user">
+  <div class="form-group"></div>
+  <input type="number" name="nombreusuario" placeholder="Documento Identidad">
+  <input type="email" name="email" placeholder="Correo">
+  <input type="password" name="password" placeholder="Contraseña">
+  <input type="string" name="nombres" placeholder="Nombres">
+  <input type="string" name="apellidos" placeholder="Apellidos">
+  <input type="number" name="telefono" placeholder="Teléfono">
+  <input type="number" name="psicometra" placeholder="Psicómetra">
+  <input type="number" name="auxiliar" placeholder="Auxiliar Psicómetra">
+  <label><input type="radio" value="C" name="rol" checked>Constructor de preguntas</label>
+  <label><input type="radio" value="P" name="rol" checked>Psicómetra</label>
+  <label><input type="radio" value="X" name="rol" checked>Auxiliar psicómetra</label>
+  <label><input type="radio" value="A" name="rol" checked>Administrador</label>
+  <label><input type="radio" value="S" name="activo" checked>Activo</label>
+  <label><input type="radio" value="N" name="activo" checked>Inactivo</label>
+  <input type="submit" value="submit">
+</form>

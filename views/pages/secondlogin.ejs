@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+
+<section name="login_page">
+
+<div class="container">
+  <div class="card card-container">
+        <form method="POST" action="/secondlogin"></form>
+      <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+      <p id="profile-name" class="profile-name-card"></p>
+      <form class="form-signin" method="POST" action="/login">
+          <span id="reauth-email" class="reauth-email"></span>
+          <input type="number" id="totp" name="totp" class="form-control" placeholder="Código temporal" required autofocus>
+          <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Ingresar</button>
+      </form>
+  </div><!-- /card-container -->
+</div><!-- /container -->
+</section>
+
+</body>
+
+</html>

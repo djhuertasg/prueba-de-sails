@@ -6,7 +6,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-
+                            <form method="POST" action="/registrarrespuesta">
                                 <!--Enunciado-->
                                 <div class="row">
                                         <div class="col-sm-3 col-md-2 col-5">
@@ -33,7 +33,7 @@
                                             <label style="font-weight:bold;">Respuesta correcta</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="correct answer" type="text" >
+                                                <input class="form-control" id="correctanswer" type="text" >
                                             </div>
                                         </div>
                                         <hr />
@@ -43,7 +43,7 @@
                                             <label style="font-weight:bold;">Justificación respuesta correcta</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="correct answer justification" type="text" >
+                                                <input class="form-control" id="correctanswerjustification" type="text" >
                                                 <div class="input-group">
                                                         <label class="input-group-btn">
                                                             <span class="btn btn-primary">
@@ -60,7 +60,7 @@
                                             <label style="font-weight:bold;">Respuesta incorrecta 1</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="incorrect answer 1" type="text" >
+                                                <input class="form-control" id="incorrectanswer1" type="text" >
                                             </div>
                                         </div>
                                         <hr />
@@ -70,7 +70,7 @@
                                             <label style="font-weight:bold;">Justificación respuesta incorrecta 1</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="justification incorrect answer 1" type="text" >
+                                                <input class="form-control" id="justificationincorrectanswer1" type="text" >
                                                 <div class="input-group">
                                                         <label class="input-group-btn">
                                                             <span class="btn btn-primary">
@@ -87,7 +87,7 @@
                                             <label style="font-weight:bold;">Respuesta incorrecta 2</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="incorrect answer 2" type="text" >
+                                                <input class="form-control" id="incorrectanswer2" type="text" >
                                             </div>
                                         </div>
                                         <hr />
@@ -97,7 +97,7 @@
                                             <label style="font-weight:bold;">Justificación respuesta incorrecta 2</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="justification incorrect answer 2" type="text" >
+                                                <input class="form-control" id="justificationincorrectanswer2" type="text" >
                                                 <div class="input-group">
                                                         <label class="input-group-btn">
                                                             <span class="btn btn-primary">
@@ -114,7 +114,7 @@
                                             <label style="font-weight:bold;">Respuesta incorrecta 3</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="incorrect answer 3" type="text" >
+                                                <input class="form-control" id="incorrectanswer3" type="text" >
                                             </div>
                                         </div>
                                         <hr />
@@ -124,7 +124,7 @@
                                             <label style="font-weight:bold;">Justificación respuesta incorrecta 3</label>
                                         </div>
                                         <div class="col-md-8 col-6">
-                                                <input class="form-control" id="justification incorrect answer 3" type="text" >
+                                                <input class="form-control" id="justificationincorrectanswer3" type="text" >
                                                 <div class="input-group">
                                                         <label class="input-group-btn">
                                                             <span class="btn btn-primary">
@@ -151,15 +151,14 @@
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
               <h4 class="modal-title">Pregunta ingresada éxitosamente</h4>
             </div>
             <div class="modal-body">
               <p>¿Desea ingresar una nueva pregunta?</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Sí</button>
-              <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+              <button type="button" value="S" class="btn btn-default" data-dismiss="modal">Sí</button>
+              <button type="button" value="N" class="btn btn-default" data-dismiss="modal">No</button>
             </div>
           </div>
           
@@ -169,7 +168,7 @@
                         </div>
                     </div>
                     <hr />
-
+                    </form>
                             </div>
                         </div>
                     </div>

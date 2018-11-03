@@ -32,11 +32,18 @@ module.exports.routes = {
 'POST /login': 'AuthController.login',
 '/logout': 'AuthController.logout',
 
+'/secondlogin': {view: 'pages/secondlogin'},
+'POST /secondlogin': { action: '/secondlogin'},
+
+'GET /register': { view: 'pages/register' },
+'POST /user': 'user/crearusuario',
+
 'GET /inicio': { view: 'pages/inicio' },
 'GET /perfil': { view: 'pages/perfil' },
 'GET /preguntas': { view: 'pages/registrarpregunta' },
 'POST /registrarpregunta': { action: 'user/registrarpregunta' },
 'GET /respuestas': { view: 'pages/respuestas' },
+'POST /registrarrespuesta': { action: 'user/registrarrespuesta' },
 'GET /actualizar': { view: 'pages/actualizarpregunta' },
 'GET /reportar': { view: 'pages/reportarinconsistencia' },
 

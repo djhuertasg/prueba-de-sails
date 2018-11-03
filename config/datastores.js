@@ -51,6 +51,16 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
 
+    postgres: {
+      adapter: 'sails-postgresql',
+      host: 'localhost',
+      port: 5432,
+      user: 'postgres',
+      password: 'postgres',
+      database: 'RILCO',
+      schema: true
+    }
+
   },
 
 
