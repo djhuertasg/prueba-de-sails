@@ -21,7 +21,7 @@ login: function(req, res) {
 req.logIn(user, function(err) {
         if(err) res.send(err);
 
-        return res.redirect("/secondlogin");
+        return res.redirect("GET /inicio");
 
         return res.send({
           message: info.message,

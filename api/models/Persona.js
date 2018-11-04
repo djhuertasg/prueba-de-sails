@@ -11,7 +11,7 @@ module.exports = {
 
   attributes: {
 
-  id: {
+  id_persona: {
     type: 'number',
     columnName: 'id_persona',
     required: true,
@@ -70,7 +70,7 @@ module.exports = {
   },
   },
   customToJSON: function () {
-    return _.omit(this, ['contrasenia'])
+    return _.omit(this, ['password'])
   },
   beforeCreate: function(user, cb){
     

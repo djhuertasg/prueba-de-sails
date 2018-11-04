@@ -7,7 +7,20 @@
             <div class="row">
                 <div class="col-12">
                         <form method="POST" action="/registrarpregunta">
-                        <div class="row">
+    <!--Código-->
+    <div class="row">
+        <div class="col-sm-3 col-md-2 col-5">
+            <label style="font-weight:bold;">Código</label>
+        </div>
+        <div class="col-md-8 col-6">
+                <div class="form-group">
+                        <input type="text" class="form-control" id="topic">
+                      </div>
+            </div>
+        </div>
+        <hr />                  
+        <!--Cargo-->
+                            <div class="row">
                                 <div class="col-sm-3 col-md-2 col-5">
                                     <label style="font-weight:bold;">Cargo</label>
                                 </div>
@@ -144,7 +157,7 @@
                         <div class="input-group">
                                 <label class="input-group-btn">
                                     <span class="btn btn-primary">
-                                        Adjuntar archivos&hellip; <input type="file" style="display: none;" multiple>
+                                        Adjuntar archivos&hellip; <input type="file" style="display: none;" multiple disabled>
                                     </span>
                                 </label>
                             </div>
@@ -163,7 +176,7 @@
                             <div class="input-group">
                                     <label class="input-group-btn">
                                         <span class="btn btn-primary">
-                                            Adjuntar archivos&hellip; <input type="file" style="display: none;" multiple>
+                                            Adjuntar archivos&hellip; <input type="file" style="display: none;" multiple disabled>
                                         </span>
                                     </label>
                                 </div>
@@ -178,11 +191,11 @@
                     </div>
                     <div class="col-md-8 col-6">
                             <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" value="U" class="custom-control-input" id="única" name="Question type">
+                                    <input type="radio" value="U" class="custom-control-input" id="única" name="Question type" checked>
                                     <label class="custom-control-label" for="única">Selección múltiple con única respuesta</label>
                                   </div>
                                   <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" value="M" class="custom-control-input" id="multiple" name="Question type">
+                                        <input type="radio" value="M" class="custom-control-input" id="multiple" name="Question type" disabled>
                                         <label class="custom-control-label" for="multiple">Selección múltiple con múltiple respuesta</label>
                                       </div>
                         </div>
