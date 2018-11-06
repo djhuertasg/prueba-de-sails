@@ -101,8 +101,9 @@ module.exports = {
         ;
   
       console.log('Usuario creado\'s id :', createdUser.id);
-      return res.view("pages/register", { mensaje: "Persona creada correctamente" });
-  
+
+      return res.redirect("/register");
+
   
     }
   

@@ -69,9 +69,8 @@ module.exports = {
         })
         ;
 
-      //sails.log('Pregunta creada', preguntaCreada.id);
-      //return res.view("pages/respuestas");
-      return res.redirect("/home");
+      sails.log('Pregunta creada', preguntaCreada.id);
+      return res.redirect("/respuestas");
   }
 
 };

@@ -24,30 +24,21 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    //view: 'pages/homepage'
-    view: 'pages/login'
-  },
-'GET /login': { view: 'pages/login' },
+'/': {view: 'pages/login'},
 'POST /login': 'AuthController.login',
 '/logout': 'AuthController.logout',
 
-'/home': 'HomeController.home',
-
-'GET /secondlogin': {view: 'pages/secondlogin'},
-'POST /secondlogin': '/secondlogin',
-
-'GET /register': { view: 'pages/register' },
-'POST /user': 'user/crearusuario',
-
-'GET /inicio': { view: 'pages/inicio' },
-'GET /perfil': { view: 'pages/perfil' },
-'GET /preguntas': { view: 'pages/registrarpregunta' },
+'/inicio':'HomeController.inicio',
+'/perfil': 'HomeController.perfil',
+'/preguntas': 'HomeController.registrarp',
 'POST /registrarpregunta': { action: 'user/registrarpregunta' },
-'GET /respuestas': { view: 'pages/respuestas' },
+'/respuestas': 'HomeController.respuestas',
 'POST /registrarrespuesta': { action: 'user/registrarrespuesta' },
-'GET /actualizar': { view: 'pages/actualizarpregunta' },
-'GET /reportar': { view: 'pages/reportarinconsistencia' },
+'/actualizar': 'HomeController.actualizarp',
+'/reportar': 'HomeController.reportari',
+
+'/register': 'HomeController.registrarusuario',
+'POST /user': 'user/crearusuario',
 
 '/tema' : 'TemaController.readJsonFile',
 

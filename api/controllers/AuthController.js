@@ -14,7 +14,7 @@ module.exports = {
                 if (err)
                     res.send(err);
 
-                return res.redirect("/home");
+                return res.redirect("/inicio");
 
                 return res.send({
                     message: info.message,
