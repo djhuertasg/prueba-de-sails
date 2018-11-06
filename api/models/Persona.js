@@ -11,14 +11,7 @@ module.exports = {
 
   attributes: {
 
-  id_persona: {
-    type: 'number',
-    columnName: 'id_persona',
-    required: true,
-    autoIncrement:true,
-    unique: true
-  },
-	nombreusuario: {
+  nombreusuario: {
     type: 'number',
     columnName: 'documento_identidad',
     required: true,
@@ -68,6 +61,12 @@ module.exports = {
     type: 'number',
     columnName: 'Auxiliar_Psicometra',
   },
+
+  preguntas: {
+     collection: 'pregunta',
+     via: 'owners'
+  },
+
   },
   customToJSON: function () {
     return _.omit(this, ['password'])

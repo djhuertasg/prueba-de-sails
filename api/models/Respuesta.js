@@ -9,14 +9,7 @@ module.exports = {
 
   attributes: {
 
-  id_respuesta: {
-    type: 'number',
-    columnName: 'id_respuesta',
-    required: true,
-    autoIncrement:true,
-    unique: true
-  },
-	enunciado:{
+  enunciado:{
     type: 'string',
     columnName: 'enunciado',
     required: true
@@ -54,6 +47,11 @@ module.exports = {
     type: 'number',
     columnName: 'id_pregunta',
   },
+
+  //Referencia a Preguntas
+  owner: {
+    model: 'pregunta'
+  }
     
   },
 

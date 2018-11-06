@@ -15,8 +15,8 @@
 
 module.exports.models = {
 
-  //connection: "postgres",
-  database: "rilco",
+  connection: "postgres",
+  //database: "gitei_rilco",
   /***************************************************************************
   *                                                                          *
   * Whether the `.create()` and `.update()` model methods should ignore      *
@@ -54,7 +54,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
 
-  migrate: 'safe',
+  migrate: 'alter',
 
 
   /***************************************************************************

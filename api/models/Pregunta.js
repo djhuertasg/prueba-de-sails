@@ -9,17 +9,9 @@ module.exports = {
 
   attributes: {
 
-      id_pregunta: {
-        type: 'number',
-        columnName: 'id_pregunta',
-        required: true,
-        autoIncrement:true,
-        unique: true
-      },
       estado: {
         type: 'string',
         columnName: 'estado',
-        required: true
       },
       cargo: {
         type: 'string',
@@ -90,6 +82,18 @@ module.exports = {
         columnType: 'timestamp',
         columnName: 'fecha_creacion',
       },
+
+      //Referencia a personas
+      owners: {
+         collection: 'persona',
+         via: 'preguntas'
+      },
+
+      //Referencia a respuestas
+      respuestas: {
+        collection: 'respuesta',
+        via: 'owner'
+      }
 
   },
 

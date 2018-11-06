@@ -100,7 +100,7 @@ module.exports = {
         })
         ;
   
-      sails.log('Usuario creado\'s id :', createdUser.id);
+      console.log('Usuario creado\'s id :', createdUser.id);
       return res.view("pages/register", { mensaje: "Persona creada correctamente" });
   
   

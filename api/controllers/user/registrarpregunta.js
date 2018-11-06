@@ -37,7 +37,7 @@ module.exports = {
 
       var pregunta = new Object();
       pregunta.fecha = await sails.helpers.generatedate();
-      pregunta.estado = pregunta.estado;
+      //pregunta.estado = pregunta.estado;
       pregunta.cargo = inputs.cargo;
       pregunta.tema = inputs.tema;
       pregunta.subtema = inputs.subtema;
@@ -69,9 +69,9 @@ module.exports = {
         })
         ;
 
-      sails.log('Pregunta creada', preguntaCreada.id);
-      return res.redirect("/respuestas");
-      
+      //sails.log('Pregunta creada', preguntaCreada.id);
+      //return res.view("pages/respuestas");
+      return res.redirect("/home");
   }
 
 };

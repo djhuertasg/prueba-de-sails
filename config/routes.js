@@ -32,6 +32,8 @@ module.exports.routes = {
 'POST /login': 'AuthController.login',
 '/logout': 'AuthController.logout',
 
+'/home': 'HomeController.home',
+
 'GET /secondlogin': {view: 'pages/secondlogin'},
 'POST /secondlogin': '/secondlogin',
 
@@ -47,6 +49,7 @@ module.exports.routes = {
 'GET /actualizar': { view: 'pages/actualizarpregunta' },
 'GET /reportar': { view: 'pages/reportarinconsistencia' },
 
+'/tema' : 'TemaController.readJsonFile',
 
 
 
