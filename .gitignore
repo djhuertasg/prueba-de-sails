@@ -133,3 +133,7 @@ lib-cov
 #database Connection
 
 /config/datastores.js
+#models
+
+/config/models.js
+
