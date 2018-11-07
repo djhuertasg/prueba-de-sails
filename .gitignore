@@ -130,3 +130,6 @@ lib-cov
 *.out
 *.pid
 
+#database Connection
+
+/config/datastores.js
