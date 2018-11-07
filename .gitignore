@@ -136,4 +136,5 @@ lib-cov
 #models
 
 /config/models.js
+/config/env/production.js
 

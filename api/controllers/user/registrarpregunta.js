@@ -49,7 +49,7 @@ module.exports = {
       pregunta.tipopregunta = inputs.tipopregunta;
       pregunta.pertenencia = inputs.pertenencia;
       pregunta.observaciones = inputs.observaciones;
-
+      console.log(JSON.stringify(pregunta));
       var preguntaCreada = await Pregunta
         .create(pregunta).fetch()
         // Uniqueness constraint violation
@@ -68,7 +68,7 @@ module.exports = {
           return;
         })
         ;
-
+        console.log("Creada: "+JSON.stringify(pregunta));
       sails.log('Pregunta creada', preguntaCreada.id);
       return res.redirect("/respuestas");
   }
